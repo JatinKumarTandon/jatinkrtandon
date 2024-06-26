@@ -1,0 +1,778 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>footer</title>
+</head>
+<style>
+/* styles.css */
+*{
+background-color: #121212;
+}
+.navbar {
+  background-color: #121212; /* optional */
+  padding: 20px;
+  text-align: center; /* center align the navbar */
+  align-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* center align the links */
+}
+
+.nav-links li {
+  margin-right: 60px; /* horizontal gapping */
+}
+
+.nav-links a {
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: medium;
+  text-decoration: none;
+  color: #959595;
+  transition: color 0.2s ease; /* add a smooth transition effect */
+}
+
+.nav-links a:hover {
+  color: #FD6F00;
+  font-weight: bolder;
+}
+
+.nav-links a.active {
+  color: #FD6F00; /* add an active state */
+  font-weight: bolder;
+}
+/* styles.css */
+.hire-me-btn {
+  width: 141px;
+  height: 43px;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FD6F00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: 240px;
+  top: -20px;
+}
+
+.hire-me-btn:hover {
+  background-color: #ffffff;
+  color: #FD6F00;
+}
+.circle {
+
+  position: absolute;
+  height: 618px;
+  width: 618px;
+  background-color: #1B1B1B;
+  border-radius: 50%;
+  top: 170px;
+  right: 80px;
+}
+.heroimage{
+
+}
+.ui {
+  position: absolute;
+top: 400px;
+left: 100px;
+}
+.hello{
+ font-family: 'Lato';
+ color:#707070;
+ font-weight: semibold;
+font-size: 24px;
+}
+
+.jatin{
+ font-family: 'Lato';
+ color:#959595;
+ font-weight:bold;
+font-size: 28px;
+}
+
+.ux{
+ font-family: 'Lato';
+ color:  #FD6F00;
+ font-weight:900;
+font-size: 70px;
+}
+
+
+.Linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  opacity: 4%;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 50px #FD6F00;
+}
+.Linkedin:focus,
+.Linkedin:hover {
+  background: #0077b5;
+  outline: none;
+}
+.Behance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 2.5rem;
+  background: #14171A;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #AAB8C2;
+}
+.Behance:focus,
+.Behance:hover {
+  background: #1DA1F2;
+  outline: none;
+}
+.Dribble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 2.5rem;
+  background: #14171A;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #AAB8C2;
+}
+.Dribble:focus,
+.Dribble:hover {
+  background: #1DA1F2;
+  outline: none;
+}.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 2.5rem;
+  background: #14171A;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #AAB8C2;
+}
+.insta:focus,
+.insta:hover {
+  background: #1DA1F2;
+  outline: none;
+}
+.button-container {
+  display:flex;
+  gap: 20px;
+  position: absolute;
+  left: 100px ;
+  top: 900px 
+;
+}
+
+.hire-me {
+  width: 156px;
+  height: 48px ;
+  background-color: #FD6F00 ;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.hire-me:hover {
+  background-color: #ffffff;
+  color: #FD6F00;
+}
+
+.download-cv-button {
+  width: 156px;
+  height: 48px ;
+  color: #959595;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  border color: #fd6f00;
+  position: absolute;
+left: 200px;
+}
+
+.download-cv-button:hover {
+ background-color: #FD6F00 ;
+  color: #ffffff;
+  border color: #fd6f00;
+}
+.center-heading {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Lato';
+  font-weight: bold;
+  color: #fefefe;
+  top: 500px;
+margin-bottom: 70px;
+}
+.center-heading{
+  text-align: center;
+position: absolute;
+  top: 1090px;
+  right: 500px;
+}
+.aboutme{
+  font-family: lato;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+}
+.userinterface{
+font-size: 20px;
+font-weight: 300;
+}
+.rectangle{
+  width: 523px;
+  height: 676px;
+  border-radius: 50px;
+  background-color: #000; 
+position: absolute;
+  background-color: #1b1b1b;
+  
+  border-radius: 0%;
+  position: absolute;
+  left: 70px;
+  top: 1300px;
+  border-radius: 261.5px 261.5px 12px 12px;
+}
+.my-paragraph{
+font-size: 18px;
+font-family: lato;
+color: #959595;
+position: absolute;
+left: 694px;
+top: 1400px;
+   padding-right: 100px;
+   line-height: 190%;
+}
+.my-paragraph2{
+font-size: 18px;
+font-family: lato;
+color: #959595;
+position: absolute;
+left: 694px;
+top: 1650px;
+padding-right: 100px;
+   line-height: 190%;
+}
+.download-cv-button2{
+width: 156px;
+  height: 48px ;
+  color: #FFFFFF;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  background-color: #FD6F00;
+  position: absolute;
+  left: 694px;
+  top: 1930PX;
+}
+.download-cv-button2:hover{
+background-color: #FFFFFF;
+color: #BB5200;
+
+}
+.circle20 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 4%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+ top: 660px;
+left: 100px;
+}
+
+.circle20:hover{
+  color: #246156;
+
+}
+
+.circle30 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 4%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+ top: 720px;
+left: 200px;
+}
+.circle40 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 4%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+ top: 720px;
+left: 300px;
+}
+.circle50 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 4%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+ top: 720px;
+left: 400px;
+}
+.software {
+  height: 100px;
+width: 1279.01px;
+margin: 0 auto;
+  padding: 20px;
+ margin-top: 2100px;
+}
+
+.software-grid {
+    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.software-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  background-color:#2D2D2D ;
+}
+
+.software-item:hover {
+  color: #2d2d2d;
+  box-shadow: 0 0 10px rgba(253, 111, 0, 100%);
+}
+
+.software-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+
+}
+
+.software-item span {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #2D2D2D
+}
+.softwares{
+font-family: lato;
+font-size: 40px;
+font-weight: bold;
+align-content: center;
+ text-align: center;
+position: absolute;
+  top: 2100px;
+  color: #ffffff;
+    justify-items: center;
+  width: 100%;
+}
+
+.portfolio{
+font-family: lato;
+font-size: 40px;
+font-weight: bold;
+align-content: center;
+ text-align: center;
+position: absolute;
+  top: 3100px;
+  color: #ffffff;
+    justify-items: center;
+  width: 100%;
+
+}
+.portfolio h2 {
+    margin-bottom: 20px;
+
+ background-color:#303030 ;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+.project {
+    width: 415px;
+    margin: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 10px 10px 10px 10px;
+       background-color:#303030;
+}
+.project:hover{
+  color: #2d2d2d;
+  box-shadow: 0 0 10px rgba(253, 111, 0, 100%);
+}
+
+.project img {
+    width: 100%;
+    height: 234px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project h3 {
+  font-family: lato;
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    background-color: #303030 ;
+}
+
+.project p {
+  color: #959595;
+    margin: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    background-color: #303030 ;
+}
+.portfolioss{
+ position: absolute;
+  top: 3200px;
+  text-align: center;
+  align-content: center;
+  padding: 60px;
+}
+
+.Service{
+text-align: center;
+position: absolute;
+  top: 2500px;
+  right: 45%;
+  font-family: lato;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+color: #fff;
+align-content: center;
+ text-align: center;
+position: absolute;
+}
+.servicecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135vh;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+.gerintouch {
+                  background-color: #121212;
+            color: #fff;
+            font-family: "lato";
+            display: flex;
+            justify-content: Left;
+            align-items: Left;
+            min-height: 100vh;
+            padding: 125px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 20px;
+            position: absolute;
+            top: 3600px;
+        }
+
+       .gerintouch h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+       .gerintouch p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #ddd;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+.containerform {
+  width: 566px;
+   font-family: "lato";
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute; /* or relative */
+    top: 100px; /* adjust the value to move the form up or down */
+    left: 700px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+button {
+  background-color: #FD6F00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label span {
+  color: #fff;
+}
+/* CSS */
+.footer{
+width: 100%;
+position: absolute;
+top: 4300px;
+}
+</style>
+<body>
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="About">About Me</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact Me</a></li>
+  <button class="hire-me-btn">Hire Me</button>
+  </ul>
+</nav>
+<section>
+<div class="circle">
+  <div class="heroimage">
+<img src="file:///C:/Users/HP/Downloads/Group%2048095710.png">
+</div>
+</div>
+<div class="ui">
+<h1 class="hello">Hi I am</h1>
+<h1 class="jatin"> Jatin Kumar Tandon</h1>
+<h1 class="ux"> UI/UX Designer</h1>
+  </i>
+</div>
+</section>
+
+</div>
+</div>
+<div class="button-container">
+  <button class="hire-me">Hire me</button>
+  <a href="file:///C:/Users/HP/Downloads/Jatin%20Kumar%20Tandon%20CV.pdf" download="My_CV.pdf">
+  <button class="download-cv-button">Download CV</button>
+</a>
+</div>
+</section>
+<section>
+<div class="center-heading">
+    <h1 class="aboutme">About Me</h1>
+    <p class="userinterface">User Interface and User Experience Designer</p>
+</div>
+ <div class="rectangle">
+
+<img src="file:///C:/Users/HP/Downloads/Group%2048095713.png">
+ </div>
+
+<p class="my-paragraph"> As a passionate UI/UX Designer, I am driven by the desire to create intuitive and user-<br>centric experiences that bridge the gap between human needs and technology. I <br>possess a strong foundation in user-centered design principles, honed through a combination of academic training and practical application.My skills encompass user research, information architecture, visual design, and usability testing & iteration. I am proficient in industry-standard design toolslike Figma and Adobe XD, allowing me to translate user insights into visually appealing and user-friendly interfaces.</p>
+
+<p class="my-paragraph2">My approach is collaborative, fostering open communication and active listening to ensure alignment with stakeholders and project goals. I am a quick learner, constantly seeking new knowledge and adapting to the evolving landscape of UI/UX design. My dedication lies in creating impactful designs that not only solve user problems but also contribute  to the overall success of the product.</p>
+<a href="file:///C:/Users/HP/Downloads/Jatin%20Kumar%20Tandon%20CV.pdf" download="My_CV.pdf">
+<button class="download-cv-button2">Download CV</button>
+</a>
+</div>
+<section>
+<div>
+  <h1 class="softwares">Software Proficiency</h1>
+  </div>
+  <section class="software">
+  <div class="software-grid">
+    <div class="software-item">
+      <img src="file:///C:/Users/HP/Downloads/Group%2048095716.png" alt="Sketch">
+      <span>Sketch</span>
+    </div>
+    <div class="software-item">
+      <img src="C:/Users/HP/Downloads/Group%2048095714%20(1).png" alt="Figma">
+      <span>Figma</span>
+    </div>
+    <div class="software-item">
+      <img src="file:///C:/Users/HP/Downloads/Group%2048095715.png" alt="Adobe XD">
+      <span>Adobe XD</span>
+    </div>
+    <div class="software-item">
+      <img src="file:///C:/Users/HP/Downloads/Group%2048095717.png" alt="Photoshop">
+      <span>Adobe Photoshop</span>
+    </div>
+    <div class="software-item">
+      <img src="file:///C:/Users/HP/Downloads/Group%2048095718.png" alt="Illustrator">
+      <span>Adobe Illustrator</span>
+    </div>
+    <div class="software-item">
+      <img src="file:///C:/Users/HP/Downloads/Vector%20(3).png" alt="Illustrator">
+      <span>Adobe Premium Pro</span>
+    </div>
+    <!-- Add more software items here -->
+  </div>
+</section>
+<h1 class="Service">Service</h1>
+<div class="servicecontainer">
+    <img src="file:///C:/Users/HP/Downloads/Frame%2048095667.png" alt="Your Image Description">
+  </div>
+<div>
+  <h1 class="portfolio">Portfolio</h1>
+  </div>
+  <section class="portfolioss">
+    <div class="container">
+       
+        <div class="projects">
+            <div class="project">
+              <a href="C:/Users/HP/Downloads/Frame%2026.pdf">
+                <img src="file:///C:/Users/HP/Downloads/Frame%20Thumbnail%201%20(2).png" alt="Project 1" width="415" height="234"></a>
+                <h3>PVR Cinemas</h3>
+                <p>App Design</p>
+            </div>
+            <div class="project">
+              <a href="file:///C:/Users/HP/Downloads/Frame%2048095676.pdf">
+                <img src="file:///C:/Users/HP/Downloads/Thumbnail%201%20(1)%201%20(1).png" alt="Project 2" width="415" height="234"></a>
+                <h3>WhatsApp</h3>
+                <p>App Design</p>
+            </div>
+            <div class="project">
+              <a href="file:///C:/Users/HP/Downloads/Frame%202.pdf">
+                <img src="file:///C:/Users/HP/Downloads/Group%2038.png" alt="Project 3" width="415" height="234"></a>
+                <h3>Travel Traps</h3>
+                <p>App designing</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </div>
+</section>
+<section>
+ <div class="gerintouch">
+        <h1>Get in Touch</h1>
+        <p>Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
+        <div class="contact-info">
+            <a href="tel:+919318360014">
+                <i class="icon">📞</i> +91 9318360014
+            </a>
+            <a href="mailto:jatinktandon@gmail.com">
+                <i class="icon">✉️</i> jatinktandon@gmail.com
+            </a>
+            <a href="#">
+                <i class="icon">📍</i> Krishna Nagar, Delhi
+            </a>
+              </div>
+<div class="containerform">
+  <h2>Contact Me</h2>
+  <form>
+    <label for="name">Your Name:<span> </span></label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Your Email:<span> (required)</span></label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="question">Your Question:<span> (required)</span></label>
+    <textarea id="question" name="question" required></textarea><br><br>
+    <button type="submit">Send</button>
+  </form> 
+</div>
+</section>
+<div class="footer">
+    <img src="file:///C:/Users/HP/Downloads/Footer%20(4).png" alt="Your Image Description">
+  </div>
+
+</body>
+</html>
